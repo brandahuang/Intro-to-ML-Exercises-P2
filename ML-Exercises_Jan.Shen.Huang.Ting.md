@@ -25,7 +25,7 @@ calculated the mean Rent and mean total rent for both subsets.
 
     ## difference between mean total rent of green buildings and non-green builings = 2411698
 
-![](ML-Exercises_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](unnamed-chunk-2-1.png)
 
 Green building’s Rent is higher than normal buildings in average and in
 total.
