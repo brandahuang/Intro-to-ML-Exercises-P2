@@ -124,8 +124,8 @@ We first created a new ‘Date’ column by combining ‘Year’, ‘Month’, a
 CRSDepTime, ArrTime, CRSArrTime) into time formats(HH:MM) for convenient
 analysis.
 
-Let’s start from seeing the flight frequency by different scales of
-time:
+Let’s start from seeing the flight frequency by different scales of time:
+
 ![](plots/unnamed-chunk-12-1.png)
 ![](plots/unnamed-chunk-13-1.png)
 ![](plots/unnamed-chunk-14-1.png)
@@ -139,6 +139,7 @@ specific day of week. The third plot actually made us realize that
 generally there ware fewer flights on Saturday(the sixth day of week).
 
 ![](plots/unnamed-chunk-15-1.png)
+
 We can see that ABIA Airport were mainly dominated by Southwest
 Airlines(WN), while American Airlines(AA) and Continental Airlines(CO)
 being the Top 2 and Top 3 airlines.
@@ -150,6 +151,7 @@ the original full data into two data sets: one with all the flights flew
 to Austin and another one with all the flights departured from Austin.
 
 ![](plots/unnamed-chunk-17-1.png)
+
 We can see that the the performance of average delay rate of the Top 3
 Airlines was medium among all airlines at ABIA airport. Southwest
 Airlines actually did quite well on on-time arrivals. With more than
@@ -158,6 +160,7 @@ Airlines actually did quite well on on-time arrivals. With more than
 
 ![](plots/unnamed-chunk-19-1.png)
 ![](plots/unnamed-chunk-20-1.png)
+
 By looking into monthly arrival and departure delay of the Top 3
 airline, we came to realize that the season from September to November
 generally had low delay rate while March, June and December had high
@@ -213,15 +216,6 @@ that small companies are naturally more volatile.
 ![](plots/unnamed-chunk-23-2.png)
 ![](plots/unnamed-chunk-23-3.png)
 ![](plots/unnamed-chunk-23-4.png)
-
-    ##               ClCl.DIAa    ClCl.VOOa   ClCl.TNAa   ClCl.FASa
-    ## 2015-01-02           NA           NA          NA          NA
-    ## 2015-01-05 -0.017421636 -0.017568992 -0.03833108 -0.05684491
-    ## 2015-01-06 -0.008293280 -0.009833011 -0.05423411 -0.03932167
-    ## 2015-01-07  0.012688142  0.012495193  0.03634100  0.03392184
-    ## 2015-01-08  0.018053415  0.017568490  0.05000000  0.04343820
-    ## 2015-01-09 -0.008614869 -0.008420776 -0.02653963 -0.03473172
-
 ![](plots/unnamed-chunk-23-5.png)
 
 #### 1st Portfolio: Safe
@@ -230,13 +224,6 @@ Initial wealth: $100,000
 
 We distributed our 90% of the total wealth to DIA and VOO, 10% to TNA
 and FAS.
-
-    ##            ClCl.DIAa ClCl.VOOa ClCl.TNAa ClCl.FASa
-    ## 2017-03-16  44969.94   44924.1   5029.35   5036.55
-
-    ## [1] 99959.94
-
-    ## [1] 124629.9
 
 ![](plots/unnamed-chunk-24-1.png)
 Plot all the 5000 simulations:
@@ -268,25 +255,19 @@ The initial wealth is $100,000
 We distributed our 90% of the total wealth to TNA and FAS, 10% to DIA
 and VOO
 
-    ##            ClCl.DIAa ClCl.VOOa ClCl.TNAa ClCl.FASa
-    ## 2015-03-11  4990.379  4988.297  45879.84  45639.67
-
-    ## [1] 101498.2
-
-    ## [1] 97390.9
-
 ![](plots/unnamed-chunk-27-1.png)
+Plot all the 5000 simulations:
 ![](plots/unnamed-chunk-27-2.png)
+![](plots/unnamed-chunk-27-3.png)
 
 Profit / Loss:
-![](plots/unnamed-chunk-27-3.png)
 
     ## [1] 104990.2
 
     ## [1] 4990.199
+![](plots/unnamed-chunk-28-1.png)
 
 5% value at Risk:
-![](plots/unnamed-chunk-28-1.png)
 
     ##        5% 
     ## -24333.09
@@ -303,40 +284,20 @@ The initial wealth is $100,000
 We distributed our 50% of the total wealth to TNA and FAS, 50% to DIA
 and VOO
 
-    ##            ClCl.DIAa ClCl.VOOa ClCl.TNAa ClCl.FASa
-    ## 2017-11-09  24921.43  24909.68  24700.31   24800.1
-
-    ## [1] 99331.52
-
-    ## [1] 105772.6
-
 ![](plots/unnamed-chunk-30-1.png)
 ![](plots/unnamed-chunk-30-2.png)
 
 ![](plots/unnamed-chunk-30-3.png)
 
-``` r
-# Profit/loss
-mean(sim1[,n_days])
-```
+Profit / Loss:
 
     ## [1] 103317.2
-
-``` r
-mean(sim1[,n_days] - initial_wealth)
-```
-
+    
     ## [1] 3317.155
 
-``` r
-hist(sim1[,n_days]- initial_wealth, breaks=30)
-```
 ![](plots/unnamed-chunk-31-1.png)
 
-``` r
-# 5% value at risk:
-quantile(sim1[,n_days]- initial_wealth, prob=0.05)
-```
+5% value at Risk:
 
     ##        5% 
     ## -16469.17
@@ -711,7 +672,6 @@ cor(social_results)
 ggcorrplot::ggcorrplot(cor(social_results),hc.order = T)
 ```
 ![](plots/unnamed-chunk-33-1.png)
-``` r
   #shopping,chatter,photo sharing
   #politics,travel,computers
   #art,tv_films,craft
@@ -719,7 +679,8 @@ ggcorrplot::ggcorrplot(cor(social_results),hc.order = T)
   #automotive,news
   #personal_fitness,health_nutrition,outdoors,eco
   #fashion,beauty,cooking,music
-
+  
+``` r
 Z = social/rowSums(social)
 pc = prcomp(Z, scale=TRUE, rank=2)
 plot(pc)
@@ -885,71 +846,12 @@ advertised via digital ads.
 ``` r
 # Load in packages
 library(tm)
-```
-
-    ## Loading required package: NLP
-
-    ## 
-    ## Attaching package: 'NLP'
-
-    ## The following object is masked from 'package:ggplot2':
-    ## 
-    ##     annotate
-
-    ## 
-    ## Attaching package: 'tm'
-
-    ## The following object is masked from 'package:mosaic':
-    ## 
-    ##     inspect
-
-``` r
 library(tidyverse)
 library(slam)
 library(proxy)
-```
-
-    ## 
-    ## Attaching package: 'proxy'
-
-    ## The following object is masked from 'package:Matrix':
-    ## 
-    ##     as.matrix
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     as.dist, dist
-
-    ## The following object is masked from 'package:base':
-    ## 
-    ##     as.matrix
-
-``` r
 library(rpart)
 library(class)
 library(randomForest)
-```
-
-    ## randomForest 4.6-14
-
-    ## Type rfNews() to see new features/changes/bug fixes.
-
-    ## 
-    ## Attaching package: 'randomForest'
-
-    ## The following object is masked from 'package:gridExtra':
-    ## 
-    ##     combine
-
-    ## The following object is masked from 'package:dplyr':
-    ## 
-    ##     combine
-
-    ## The following object is masked from 'package:ggplot2':
-    ## 
-    ##     margin
-
-``` r
 library(e1071)
 ```
 
@@ -1783,6 +1685,6 @@ groceryrules3 %>% head(10) %>%
 The third result gave us 15 rules with more items appeared while whole
 milk was still the most common one.
 
-Summary: \* Whole milk is the most common item in transactions. \*
-Consumers are more likely to buy other vegetables when buying root
-vegetables.
+Summary: 
+* Whole milk is the most common item in transactions. *
+* Consumers are more likely to buy other vegetables when buying root vegetables.
