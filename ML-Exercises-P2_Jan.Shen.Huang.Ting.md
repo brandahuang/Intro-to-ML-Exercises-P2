@@ -242,19 +242,23 @@ and FAS.
 ![](plots/unnamed-chunk-24-2.png)
 ![](plots/unnamed-chunk-24-3.png)
 
+Profit / Loss:
+
     ## [1] 101419.9
 
     ## [1] 1419.862
 
 ![](plots/unnamed-chunk-25-1.png)
 
+5% value at Risk:
+
     ##        5% 
     ## -9501.304
 
 Summary - safe portfolio: 
-\* Average return of investment after 20 days:
+* Average return of investment after 20 days:
 101419.9 
-\* 5% value at Risk for safe portfolio: -9501.304
+* 5% value at Risk for safe portfolio: -9501.304
 
 #### 2nd Portfolio: High-risk
 
