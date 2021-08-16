@@ -64,7 +64,7 @@ significant predictors for green and normal buildings.
 To visualize the individual effects of these significant predictors on
 Rent of green buildings and their correlations, we created a correlation
 plot, scatter plots, and box plots below:
-
+https://github.com/brandahuang/Intro-to-ML-Exercises-P2/blob/b37f7fb2beeac2ffc5e37daf1bce80a0ee274e1e/plots/unnamed-chunk-4-1.png
 <img src="ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-4-1.png" width="33%" />
 <img src="ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-5-1.png" width="33%" />
 <img src="ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-6-1.png" width="33%" />
