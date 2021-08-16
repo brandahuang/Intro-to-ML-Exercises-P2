@@ -78,7 +78,9 @@ Let’s start with age comparison:
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##    0.00   -6.00  -14.00  -25.41  -54.00  -55.00
 
+
 ![](plots/unnamed-chunk-7-1.png)
+
 We discovered that green builidings in general were newer, which leads
 to higher rent.
 
