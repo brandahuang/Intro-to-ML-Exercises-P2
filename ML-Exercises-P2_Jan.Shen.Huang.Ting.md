@@ -10,19 +10,11 @@ claim, we separated the data into green and non-green buildings, and we
 calculated the mean Rent and mean total rent for both subsets.
 
     ## mean rent for green buildings =  29.97415
-
-    ## 
     ## mean rent for non-green buildings =  28.27323
-
-    ## 
     ## difference between mean rent of green buildings and non-green builings = 1.70092
-
-    ## 
+    
     ## mean total rent for green buildings =  8746220
-
-    ## 
     ## mean total rent for non-green buildings =  6334522
-
     ## difference between mean total rent of green buildings and non-green builings = 2411698
 
 ![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-2-1.png)
