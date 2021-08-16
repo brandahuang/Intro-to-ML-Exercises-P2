@@ -1686,5 +1686,5 @@ The third result gave us 15 rules with more items appeared while whole
 milk was still the most common one.
 
 Summary: 
-* Whole milk is the most common item in transactions. *
+* Whole milk is the most common item in transactions.
 * Consumers are more likely to buy other vegetables when buying root vegetables.
