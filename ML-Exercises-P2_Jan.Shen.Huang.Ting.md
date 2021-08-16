@@ -1273,7 +1273,7 @@ accuracy_rf
 
 Our random forest model helped us achieve 60.68% accuracy.
 
-## MODEL: Naive Bayes
+### MODEL: Naive Bayes
 
 ``` r
 # Fitting Naive Bayes Model
