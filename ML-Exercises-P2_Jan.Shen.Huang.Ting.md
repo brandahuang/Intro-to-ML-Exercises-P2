@@ -1,3 +1,5 @@
+Author: "Jonthan Jan, Mu An Shen, Yen Wen Ting, Yi-Ting Huang"
+
 # Visual story telling part 1: green buildings
 
 To begin with the analysis, we first processed and cleaned the data by
