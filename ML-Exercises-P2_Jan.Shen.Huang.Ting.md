@@ -64,10 +64,10 @@ significant predictors for green and normal buildings.
 To visualize the individual effects of these significant predictors on
 Rent of green buildings and their correlations, we created a correlation
 plot, scatter plots, and box plots below:
-https://github.com/brandahuang/Intro-to-ML-Exercises-P2/blob/b37f7fb2beeac2ffc5e37daf1bce80a0ee274e1e/plots/unnamed-chunk-4-1.png
-<img src="ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-4-1.png" width="33%" />
-<img src="ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-5-1.png" width="33%" />
-<img src="ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-6-1.png" width="33%" />
+![](plots/unnamed-chunk-4-1.png)
+![](plots/unnamed-chunk-5-1.png)
+![](plots/unnamed-chunk-6-1.png)
+
 By neglecting the outliers, we discovered most of these variables were
 significant to the increase of green building’s rent. Then, we compared
 some of the variables of green buildings to those of normal buildings:
@@ -77,11 +77,11 @@ Let’s start with age comparison:
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##    0.00   -6.00  -14.00  -25.41  -54.00  -55.00
 
-<img src="ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-7-1.png" width="33%" />
+![](plots/unnamed-chunk-7-1.png)
 We discovered that green builidings in general were newer, which leads
 to higher rent.
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](plots/unnamed-chunk-8-1.png)
 
 ``` r
 summary(green$class)-summary(normal$class)
@@ -124,11 +124,10 @@ analysis.
 
 Let’s start from seeing the flight frequency by different scales of
 time:
+![](plots/unnamed-chunk-12-1.png)
+![](plots/unnamed-chunk-13-1.png)
+![](plots/unnamed-chunk-14-1.png)
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-12-1.png)
-
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-13-1.png)
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-14-1.png)
 We can see that Winter generally had much fewer flights than Summer.
 This is understandable as people usually have vacations in the Summer.
 Moreover, the pattern of flight frequency by day of month looked similar
@@ -137,7 +136,7 @@ could guess this was because there was usually fewer flights in a
 specific day of week. The third plot actually made us realize that
 generally there ware fewer flights on Saturday(the sixth day of week).
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-15-1.png)
+![](plots/unnamed-chunk-15-1.png)
 We can see that ABIA Airport were mainly dominated by Southwest
 Airlines(WN), while American Airlines(AA) and Continental Airlines(CO)
 being the Top 2 and Top 3 airlines.
@@ -148,23 +147,25 @@ To find insights with arrival or departure respectively, we separated
 the original full data into two data sets: one with all the flights flew
 to Austin and another one with all the flights departured from Austin.
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-17-1.png)
+![](plots/unnamed-chunk-17-1.png)
 We can see that the the performance of average delay rate of the Top 3
 Airlines was medium among all airlines at ABIA airport. Southwest
 Airlines actually did quite well on on-time arrivals. With more than
 15,000 flights arriving at Austin, Southwest Airlines only had averagely
 5-min delay.
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-19-1.png)
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-20-1.png)
+![](plots/unnamed-chunk-19-1.png)
+![](plots/unnamed-chunk-20-1.png)
 By looking into monthly arrival and departure delay of the Top 3
 airline, we came to realize that the season from September to November
 generally had low delay rate while March, June and December had high
 delay rate.
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-21-1.png)
+![](plots/unnamed-chunk-21-1.png)
+![](plots/unnamed-chunk-22-1.png)
+![](plots/unnamed-chunk-22-2.png)
+![](plots/unnamed-chunk-22-3.png)
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-22-1.png)![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-22-2.png)![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-22-3.png)
 From the above plots, we can know the these three airlines did not have
 same flight routes.  
 For Southwest Airlines, flights from Nashville International
@@ -206,7 +207,10 @@ that small companies are naturally more volatile.
 
     ## [1] "DIA" "VOO" "TNA" "FAS"
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-23-1.png)![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-23-2.png)![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-23-3.png)![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-23-4.png)
+![](plots/unnamed-chunk-23-1.png)
+![](plots/unnamed-chunk-23-2.png)
+![](plots/unnamed-chunk-23-3.png)
+![](plots/unnamed-chunk-23-4.png)
 
     ##               ClCl.DIAa    ClCl.VOOa   ClCl.TNAa   ClCl.FASa
     ## 2015-01-02           NA           NA          NA          NA
@@ -216,7 +220,7 @@ that small companies are naturally more volatile.
     ## 2015-01-08  0.018053415  0.017568490  0.05000000  0.04343820
     ## 2015-01-09 -0.008614869 -0.008420776 -0.02653963 -0.03473172
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-23-5.png)
+![](plots/unnamed-chunk-23-5.png)
 
 #### 1st Portfolio: Safe
 
@@ -232,7 +236,8 @@ and FAS.
 
     ## [1] 124629.9
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-24-1.png)![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-24-2.png)
+![](plots/unnamed-chunk-24-1.png)
+![](plots/unnamed-chunk-24-2.png)
 
     ##               [,1]      [,2]      [,3]      [,4]     [,5]     [,6]      [,7]
     ## result.1  99716.48  95742.75  97216.26  98174.16 100309.6 100164.0  99727.83
@@ -256,13 +261,13 @@ and FAS.
     ## result.5 105308.4 104983.5 103513.9 104636.0 104478.6 105102.7
     ## result.6 104010.9 103140.6 101791.9 101369.0 101163.3 101639.5
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-24-3.png)
+![](plots/unnamed-chunk-24-3.png)
 
     ## [1] 101419.9
 
     ## [1] 1419.862
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-25-1.png)
+![](plots/unnamed-chunk-25-1.png)
 
     ##        5% 
     ## -9501.304
@@ -284,7 +289,8 @@ and VOO
 
     ## [1] 97390.9
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-27-1.png)![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-27-2.png)
+![](plots/unnamed-chunk-27-1.png)
+![](plots/unnamed-chunk-27-2.png)
 
     ##               [,1]      [,2]      [,3]      [,4]      [,5]      [,6]      [,7]
     ## result.1  99451.56  99060.20 100327.35  98769.30  97395.42  98523.38 101444.22
@@ -308,13 +314,13 @@ and VOO
     ## result.5  93711.66  93502.64  91537.55  92414.48  93577.84  94824.85
     ## result.6  88020.37  87847.96  87374.26  90231.20  90719.76  95203.81
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-27-3.png)
+![](plots/unnamed-chunk-27-3.png)
 
     ## [1] 104990.2
 
     ## [1] 4990.199
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-28-1.png)
+![](plots/unnamed-chunk-28-1.png)
 
     ##        5% 
     ## -24333.09
@@ -336,7 +342,8 @@ and VOO
 
     ## [1] 105772.6
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-30-1.png)![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-30-2.png)
+![](plots/unnamed-chunk-30-1.png)
+![](plots/unnamed-chunk-30-2.png)
 
     ##               [,1]      [,2]      [,3]      [,4]      [,5]      [,6]      [,7]
     ## result.1 100002.99  94132.79  93951.32  96684.38  99103.70  97661.31  95732.98
@@ -360,7 +367,7 @@ and VOO
     ## result.5 101598.45  97621.32  96641.21  95178.3  94215.06  87252.79
     ## result.6  95939.58  97166.80  98913.01  99472.8 102967.88  97754.68
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-30-3.png)
+![](plots/unnamed-chunk-30-3.png)
 
 ``` r
 # Profit/loss
@@ -378,8 +385,7 @@ mean(sim1[,n_days] - initial_wealth)
 ``` r
 hist(sim1[,n_days]- initial_wealth, breaks=30)
 ```
-
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-31-1.png)
+![](plots/unnamed-chunk-31-1.png)
 
 ``` r
 # 5% value at risk:
@@ -766,9 +772,7 @@ cor(social_results)
 ``` r
 ggcorrplot::ggcorrplot(cor(social_results),hc.order = T)
 ```
-
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-33-1.png)
-
+![](plots/unnamed-chunk-33-1.png)
 ``` r
   #shopping,chatter,photo sharing
   #politics,travel,computers
@@ -847,8 +851,7 @@ summary(pc)
 ``` r
 plot(pc)
 ```
-
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-33-2.png)
+![](plots/unnamed-chunk-33-2.png)
 
 ``` r
 o1 = order(loadings[,1], decreasing=TRUE)
@@ -896,8 +899,7 @@ row.names(loadings[order(loadings[,1] ),][13:26,])
 ``` r
 qplot(scores[,1], scores[,2],  xlab='Component 1', ylab='Component 2',alpha=0.1)
 ```
-
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-33-3.png)
+![](plots/unnamed-chunk-33-3.png)
 
 ``` r
 #save clustered customers to list for further target marketing use
@@ -1541,14 +1543,13 @@ sum(itemFreq)
 ``` r
 itemFrequencyPlot(groceries, topN=10) 
 ```
-
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-48-1.png)
+![](plots/unnamed-chunk-48-1.png)
 
 ``` r
 image(groceries[1:10])  
 ```
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-48-2.png)
+![](plots/unnamed-chunk-48-2.png)
 
 First, we set support = 0.05, confidence = 0.1 and at least 2 items to
 conduct Apriori algorithm:
@@ -1635,16 +1636,14 @@ inspect(groceryrules[1:6])
 par(family = 'STKaiti')
 groceryrules %>% plot() 
 ```
-
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-49-1.png)
+![](plots/unnamed-chunk-49-1.png)
 
 ``` r
 par(family = 'STKaiti')
 groceryrules %>% head(10) %>% 
   plot(., method = "graph")
 ```
-
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-49-2.png)
+![](plots/unnamed-chunk-49-2.png)
 Since we set high support and low confidence, there were only 6 rules.
 We can realize that whole mike, rolls buns and yogurt have strong
 relationship in those transactions. The result also showed the same
@@ -1734,7 +1733,8 @@ Let’s increase confidence and support and maintain at least 2 items:
     ## [13] 0.18393493 1.205032 557  
     ## [14] 0.19349263 1.513634 736
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-50-1.png)![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-50-2.png)
+![](plots/unnamed-chunk-50-1.png)
+![](plots/unnamed-chunk-50-2.png)
 We got 14 rules from the second output. There were more items appeared
 in transactions. Still, the whole milk played as the most common role as
 appearance.
@@ -1833,16 +1833,15 @@ inspect(groceryrules3[1:10])
 par(family = 'STKaiti')
 groceryrules3 %>% plot()
 ```
-
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-51-1.png)
+![](plots/unnamed-chunk-51-1.png)
 
 ``` r
 par(family = 'STKaiti')
 groceryrules3 %>% head(10) %>% 
   plot(., method = "graph")
 ```
+![](plots/unnamed-chunk-51-2.png)
 
-![](ML-Exercises-P2_Jan.Shen.Huang.Ting_files/figure-markdown_github/unnamed-chunk-51-2.png)
 The third result gave us 15 rules with more items appeared while whole
 milk was still the most common one.
 
