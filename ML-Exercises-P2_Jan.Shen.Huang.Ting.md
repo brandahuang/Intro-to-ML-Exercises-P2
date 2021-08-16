@@ -19,7 +19,7 @@ calculated the mean Rent and mean total rent for both subsets.
 
 ![](plots/unnamed-chunk-2-1.png)
 
-    Green building's Rent is higher than normal buildings in average and in total.
+Green building's Rent is higher than normal buildings in average and in total.
 
 Next, we proceed to verify if green rating is what causes the increase
 in rent. First, we fit a linear model using most variables to identify
@@ -59,7 +59,7 @@ significant predictors for green and normal buildings.
     ## Multiple R-squared:  0.2733, Adjusted R-squared:  0.258 
     ## F-statistic: 17.84 on 14 and 664 DF,  p-value: < 2.2e-16
 
-    empl_gr, leasing_rate, age,total_dd, precipitation, Gas_costs, Electricity_cost are significant predictors for green building rents. 
+empl_gr, leasing_rate, age,total_dd, precipitation, Gas_costs, Electricity_cost are significant predictors for green building rents. 
 
 To visualize the individual effects of these significant predictors on
 Rent of green buildings and their correlations, we created a correlation
